@@ -5,14 +5,12 @@
     box-sizing: border-box;
 }
 body {
-    background: #c06c84;
-    color: #ffff;
+    background: #f6a192;
+    color: #f6d992;
 }
 #header {
     width:100%;
     height:100vh;
-    background-image:url(img/ProfilePicture.jpg);
-    background-size: cover;
-    background-position: center;
+    
 
 }
