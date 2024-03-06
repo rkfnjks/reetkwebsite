@@ -16,6 +16,7 @@ body {
 }
 .container {
     padding: 10px 10%;
+    margin-bottom: 30px;
 }
 
 nav{
@@ -45,6 +46,7 @@ nav ul li a{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    text-align: center;
 }
 
 .header-text h1{
@@ -73,7 +75,7 @@ nav ul li a{
 
 .about-col-1 img {
     width: 150%;
-    border-radius: 15px;
+    border-radius: 5px;
     
 }
 
@@ -85,4 +87,15 @@ nav ul li a{
     font-size: 50px;
     font-weight: 600px;
     color: #c77dff;
+}
+#bio{
+    color: #9d4edd;
+}
+
+#umdLink {
+    color:#c77dff
+}
+
+#mlSpecialization {
+    color:#c77dff
 }
