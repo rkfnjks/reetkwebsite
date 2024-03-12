@@ -93,7 +93,7 @@ nav ul li a{
     font-size: 30px;
 }
 
-#umdLink {
+#vtLink {
     color:#c77dff
 }
 
@@ -127,7 +127,7 @@ nav ul li a{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -146,4 +146,16 @@ nav ul li a{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+
+.esub-title{
+    margin-top: 35%;
+    font-size: 50px;
+    font-weight: 600px;
+    color: #c77dff;
+}
+
+.experience-titles{
+    margin-top: 20px;
 }

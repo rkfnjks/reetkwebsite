@@ -17,7 +17,6 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Education</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -35,13 +34,19 @@
             <div class="row">
                 <div class="about-col-1"> 
                     <img src="img/seniorPortrait.jpg">
+                    <h1 class="esub-title">Experience</h1>
+                    <div class="experience-titles">
+                        <p class="experience-links active-link" onclick="opentab('bae systems')">BAE Systems</p>
+                        <p class="experience-links" onclick="opentab('one off coder')">One Off Coder</p>
+                    </div>
+
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p id="bio">I am a passionate computer science student interested in software development,
-                        machine learning, and UI/UX design. This fall, I will be attending the 
-                        <a id="umdLink" href="https://umd.edu">University of Maryland</a> to pursue a Bachelor's
-                        of Science in Computer Science with a <a id="mlSpecialization" href="https://undergrad.cs.umd.edu/machine-learning-degree-requirements">machine learning specialization.</a>
+                        machine learning, and UI/UX design. This fall, I will be attending
+                        <a id="vtLink" href="https://www.vt.edu">Virginia Tech</a> to pursue a Bachelor's
+                        of Science in Computer Science.</a>
                     </p>
 
                     <div class="tab-titles">
@@ -68,7 +73,7 @@
 
                     <div class="tab-contents" id="relevant coursework">
                         <ul>
-                            <li><span>Computer Science</span>AP Computer Science A, Data Structures & Algorithms, Advanced Computer Studies, IT Programming <br></li>
+                            <li><span>Computer Science</span><br>AP Computer Science A, Data Structures & Algorithms, Advanced Computer Studies, IT Programming <br></li>
                             <li><span>Mathematics</span><br>AP Calculus BC, AP Statistics</li>
                             <li><span>Physics</span><br>AP Physics 1, AP Physics C: Mechanics</li>
                         </ul>
@@ -85,8 +90,16 @@
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+<!--------------experiences-------------->
+
 
 </body>
 </html>
