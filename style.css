@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Optima' 'sans-serif';
+    font-family: 'calibri';
     box-sizing: border-box;
 }
 
 body {
-    background: #000;
-    color: #c77dff;
+    background: #100010;
+    color: #2272FF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+ 
 }
 
 .firstRow{
@@ -74,6 +76,7 @@ nav ul li a{
 #about {
     padding: 80px 0;
     color: #c77dff;
+    font-family: 'Inconsolata', 'monospace';
 }
 
 .row{
