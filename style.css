@@ -51,7 +51,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #e0aaff;
+    color: #6BA6FF;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -68,12 +68,12 @@ nav ul li a{
 }
 
 .header-text h1 span{
-    color: #e0aaff
+    color: #6BA6FF
 }
 /** --------------about me-------------- **/
 #about {
     padding: 80px 0;
-    color: #c77dff;
+    color: #2272FF;
    
 }
 
@@ -96,25 +96,21 @@ nav ul li a{
 .sub-title{
     font-size: 50px;
     font-weight: 600px;
-    color: #c77dff;
+    color: #6BA6FF;
 }
 #bio{
-    color: #9d4edd;
+    color: #2272FF;
     font-size: 30px;
 }
 
 #vtLink {
-    color:#c77dff
-}
-
-#mlSpecialization {
-    color:#c77dff
+    color:#6BA6FF;
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    color: #9d4edd;
+    color: #2272FF;
 }
 
 .tab-links{
@@ -129,7 +125,7 @@ nav ul li a{
     content: '';
     width: 0;
     height: 3px;
-    background: #fff;
+    background: #6BA6FF;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -146,8 +142,8 @@ nav ul li a{
 }
 
 .tab-contents ul li span{
-    color:#e0aaff;
-    font-size: 14px
+    color:#6BA6FF;
+    font-size: 14px;
 }
 
 .tab-contents{
@@ -163,7 +159,7 @@ nav ul li a{
     margin-top: 35%;
     font-size: 50px;
     font-weight: 600px;
-    color: #c77dff;
+    color: #6BA6FF;
 }
 
 .experience-titles{
