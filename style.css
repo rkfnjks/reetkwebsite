@@ -8,6 +8,7 @@
 body {
     background: #100010;
     color: #2272FF;
+    cursor: url('')
 }
 
 .firstRow{
@@ -95,6 +96,7 @@ nav ul li a{
     font-size: 50px;
     font-weight: 600px;
     color: #6BA6FF;
+    margin: 10px 10%;
 }
 #bio{
     color: #2272FF;
@@ -153,14 +155,14 @@ nav ul li a{
     display: block;
 }
 
+/** --------------experience-------------- **/
 
-.esub-title{
-    margin-top: 35%;
+.experienceHeader {
+    flex-wrap: wrap;
     font-size: 50px;
     font-weight: 600px;
     color: #6BA6FF;
 }
 
-.experience-titles{
-    margin-top: 20px;
-}
+
+
