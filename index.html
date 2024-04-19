@@ -37,9 +37,8 @@
         <h1 class="sub-title">About Me</h1>
         <div class="container">
             <div class="row">
-
                 <div class="about-col-2">
-                    
+
                     <p id="bio">I am a passionate computer science student interested in software development,
                         machine learning, and UI/UX design. This fall, I will be attending
                         <a id="vtLink" href="https://www.vt.edu">Virginia Tech</a> to pursue a Bachelor's
@@ -93,15 +92,26 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
+    var tablinks2 = document.getElementsByClassName("experienceTabs");
+    var 
 </script>
 
 <!--------------experience-------------->
 <div id="experience">
     <h1 class="sub-title">Experience</h1>
-    <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('kwk')">Kode With Klossy</p><br>
-        <p class="tab-links" onclick="opentab('bae systems')">BAE Systems</p><br>
-        <p class="tab-links" onclick="opentab('ooc')">One Off Coder</p>
+    <div class="container">
+        <div class="experienceCol1">
+            <div class="experienceTabs">
+                <p class="tab-links active-link" onclick="opentab('kwk')">Kode With Klossy</p><br>
+                <p class="tab-links" onclick="opentab('bae systems')">BAE Systems</p><br>
+                <p class="tab-links" onclick="opentab('ooc')">One Off Coder</p>
+            </div>
+        </div>
+        <div class="experienceCol2">
+            <h1 class="testy">test</h1>
+        </div>
+        </div>
     </div>
 </div>
 

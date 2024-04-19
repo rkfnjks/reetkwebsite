@@ -164,5 +164,28 @@ nav ul li a{
     color: #6BA6FF;
 }
 
+.experienceTabs {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.experienceCol1 {
+    margin-right: 50%;
+}
+
+.experienceCol2 {
+    margin-left: 50%;
+}
+
+.experienceCol2 {
+    justify-content: space-between;
+}
+
+.testy{
+    align-content: center;
+}
 
 
