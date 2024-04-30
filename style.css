@@ -1,15 +1,23 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    font-family: 'Playfair Display';
     box-sizing: border-box;
 }
 
 body {
-    background: #100010;
-    color: #2272FF;
-    cursor: url('')
+    background: url(img/gradientBg.svg);
+    color: #FDFDF2;
+    cursor: url('img/whiteCursor.png');
+
+
 }
+
 
 .firstRow{
     display:flex;
@@ -19,15 +27,18 @@ body {
 
 .intro-col-1 img{
     flex-basis: 35%;
+    width: 350px;
+    padding: 20px;
 }
 
 
 .intro-col-2 {
     text-align: center;
-    margin-top: 25%;
+    margin-top: 15%;
     font-size: 20px;
 
 }
+
 .container {
     padding: 10px 10%;
     
@@ -183,9 +194,4 @@ nav ul li a{
 .experienceCol2 {
     justify-content: space-between;
 }
-
-.testy{
-    align-content: center;
-}
-
 

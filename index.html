@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reet Kaler</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +14,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="img/starLogo.png" class="logo" width="50" height="50">
+                <img src="img/starLogo.png" class="logo" width="10" height="10">
                 <ul >
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
@@ -23,10 +24,10 @@
             </nav>
             <div class="firstRow">
                 <div class="intro-col-1">
-                    <img src="img/noBGseniorPortrait.png">
+                    <img src="img/Portrait.png">
                 </div>
                 <div class="intro-col-2">
-                    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Hi, I'm Reet Kaler</h1>
+                    <h1 style="'Tahoma', 'Verdana', 'Segoe', 'sans-serif'">Hi, I'm Reet Kaler</h1>
                     <p>Current computer science student interested in software development and machine learning.</p>
                 </div>
             </div>
@@ -94,7 +95,17 @@
     }
 
     var tablinks2 = document.getElementsByClassName("experienceTabs");
-    var 
+    var tabcontents2 = document.getElementsbyClassName("experience-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 </script>
 
 <!--------------experience-------------->
@@ -102,14 +113,36 @@
     <h1 class="sub-title">Experience</h1>
     <div class="container">
         <div class="experienceCol1">
-            <div class="experienceTabs">
-                <p class="tab-links active-link" onclick="opentab('kwk')">Kode With Klossy</p><br>
-                <p class="tab-links" onclick="opentab('bae systems')">BAE Systems</p><br>
-                <p class="tab-links" onclick="opentab('ooc')">One Off Coder</p>
+            <div class="experienceTabTitles">
+                <p class="experienceTabs active-link" onclick="opentab('Kode')">Kode With Klossy</p><br>
+                <p class="experienceTabs" onclick="opentab('bae systems')">BAE Systems</p><br>
+                <p class="experienceTabs" onclick="opentab('ooc')">One Off Coder</p>
             </div>
         </div>
         <div class="experienceCol2">
-            <h1 class="testy">test</h1>
+            <div class="experienceContents active-tab" id="Kode With Klossy">
+                <ul>
+                    <li><span>CODE-A-BRATION</span><br>C#, Java, Python, CSS, HTML, ASP.NET</li>
+                    <li><span>Soft Skills</span><br>Leadership, public speaking, graphic design, mentorship</li>
+                </ul>
+            </div>
+
+            <div class="experienceContents" id="BAE Systems">
+                <ul>
+                    <li><span>Founder, President</span><br>South Asian Student Association</li>
+                    <li><span>President</span><br>Women Empowerment Club</li>
+                    <li><span>Communications Director</span><br>International Club</li>
+                    <li><span>Media Manager</span><br>Asian Student Association</li>
+                </ul>
+            </div>
+
+            <div class="experienceContents" id="One Off Coder">
+                <ul>
+                    <li><span>Computer Science</span><br>AP Computer Science A, Data Structures & Algorithms, Advanced Computer Studies, IT Programming <br></li>
+                    <li><span>Mathematics</span><br>AP Calculus BC, AP Statistics</li>
+                    <li><span>Physics</span><br>AP Physics 1, AP Physics C: Mechanics</li>
+                </ul>
+            </div> 
         </div>
         </div>
     </div>
