@@ -246,7 +246,7 @@ nav ul li a{
     font-family: "Playfair Display";
   }
   
-  .timeline__paragraph {
+  .timeline__paragraph p {
     font-size: 4em;
     font-family: "Playfair Display";
   }
@@ -265,8 +265,23 @@ nav ul li a{
     width: 500px;
     margin-left: 60px;
   }
+
+  .timeline__component2 {
+    margin: 0 20px 20px 20px;
+  }
+
+  .timeline__component2 img {
+    width: 300px;
+    margin-left: 260px;
+  }
   
 /** --------------projects-------------- **/
+
+.project__component__bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
 /** --------------contact me-------------- **/
 
