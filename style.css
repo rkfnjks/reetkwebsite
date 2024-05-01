@@ -3,40 +3,45 @@
     src: url(PlayfairDisplay-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "Playfair Display Italic";
+    src: url(PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display';
     box-sizing: border-box;
 }
 
 body {
     background: url(img/gradientBg.svg);
-    color: #FDFDF2;
-    cursor: url('img/whiteCursor.png');
-
-
+    color: #fbf2ea;
+    cursor: url('img/whiteCursor.png');         
 }
-
 
 .firstRow{
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
 }
-
-
-.intro-col-1 img{
-    flex-basis: 35%;
-    width: 350px;
-    padding: 20px;
-}
-
 
 .intro-col-2 {
     text-align: center;
-    margin-top: 15%;
-    font-size: 20px;
+    
+    font-size: 25px;
+    font-family: "Playfair Display";
+}
 
+.intro-col-2 h1{
+    font-family: "Playfair Display Italic";
+    text-align: center;
+    margin-top: 25%;
+    font-size: 55px;
+    
+}
+
+.intro-col-2 h1 span{
+    color: #8444B2;
 }
 
 .container {
@@ -63,7 +68,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #6BA6FF;
+    color: #FDFDF2;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -80,13 +85,20 @@ nav ul li a{
 }
 
 .header-text h1 span{
-    color: #6BA6FF
+    color: #FDFDF2;
+
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%
 }
 /** --------------about me-------------- **/
 #about {
     padding: 80px 0;
-    color: #2272FF;
-   
+    color: #FDFDF2;
+    font-family: "Playfair Display";
 }
 
 .row{
@@ -106,23 +118,24 @@ nav ul li a{
 .sub-title{
     font-size: 50px;
     font-weight: 600px;
-    color: #6BA6FF;
+    color: #FDFDF2;
     margin: 10px 10%;
+    font-family: "Playfair Display";
 }
 #bio{
-    color: #2272FF;
+    color: #FDFDF2;
     font-size: 30px;
     padding: 10px 0;
 }
 
 #vtLink {
-    color:#6BA6FF;
+    color:#FDFDF2;
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    color: #2272FF;
+    color: #FDFDF2;
 }
 
 .tab-links{
@@ -137,7 +150,7 @@ nav ul li a{
     content: '';
     width: 0;
     height: 3px;
-    background: #6BA6FF;
+    background: #FDFDF2;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -154,7 +167,7 @@ nav ul li a{
 }
 
 .tab-contents ul li span{
-    color:#6BA6FF;
+    color:#FDFDF2;
     font-size: 14px;
 }
 
@@ -168,30 +181,9 @@ nav ul li a{
 
 /** --------------experience-------------- **/
 
-.experienceHeader {
-    flex-wrap: wrap;
-    font-size: 50px;
-    font-weight: 600px;
-    color: #6BA6FF;
-}
+/** --------------projects-------------- **/
 
-.experienceTabs {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
+/** --------------contact me-------------- **/
 
-.experienceCol1 {
-    margin-right: 50%;
-}
 
-.experienceCol2 {
-    margin-left: 50%;
-}
-
-.experienceCol2 {
-    justify-content: space-between;
-}
 
