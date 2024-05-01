@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reet Kaler</title>
-    
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 </head>
 
 <body>
+    <div class="custom-cursor"></div>
     <div id="header">
         <div class="container">
             <nav>
@@ -36,37 +42,45 @@
         
     </div>
 <!--------------about me-------------->
+    </div>
+    
+    <h1 class="sub-title">About Me</h1>
     <div id="about">
-        <h1 class="sub-title">About Me</h1>
+        
         <div class="container">
-            <div class="row">
+            
+                
                 <div class="about-col-2">
-
-                    <p id="bio">I am a passionate computer science student interested in software development,
-                        machine learning, and UI/UX design. This fall, I will be attending
-                        <a id="vtLink" href="https://www.vt.edu">Virginia Tech</a> to pursue a Bachelor's
-                        of Science in Computer Science.</a>
+                    <p id="bio">My name is Reet Kaler and I'm from the D.C. Metropolitan area.
+                        I am pursuing a Bachelor of Science in Computer Science from
+                        <a id="vtLink" href="https://www.vt.edu">Virginia Tech</a> with a minor in
+                        math. I'm interested in software development, machine learning,
+                        and UI/UX design. Outside of school, I enjoy reading
+                        and working out.</a>
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('academic leadership')">Academic Leadership</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
                         <p class="tab-links" onclick="opentab('relevant coursework')">Relevant Coursework</p>
+                        <p class="tab-links" onclick="opentab('academic leadership')">Soft Skills</p>
+                       
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>C#, Java, Python, CSS, HTML, ASP.NET</li>
-                            <li><span>Soft Skills</span><br>Leadership, public speaking, graphic design, mentorship</li>
+                            <li><span>Programming Languages</span><br>Java, Python, HTML, CSS, C#, C++, Javascript</li>
+                            <li><span>Tools</span><br>CAD, Git</li>
+                            <li><span>Frameworks</span><br> React, ASP.NET, Arduino</li>
+                           
+                          
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="academic leadership">
                         <ul>
-                            <li><span>Founder, President</span><br>South Asian Student Association</li>
-                            <li><span>President</span><br>Women Empowerment Club</li>
-                            <li><span>Communications Director</span><br>International Club</li>
-                            <li><span>Media Manager</span><br>Asian Student Association</li>
+                            <li><span>Interpersonal Skills</span><br>Collaboration, leadership, mentorship</li>
+                            <li><span>Personal Skills</span><br>Organization, tech advocacy</li>
+                            <li><span>Communications Skills</span><br>Tutoring, public speaking, graphic design</li>
                         </ul>
                     </div>
 
@@ -77,8 +91,11 @@
                             <li><span>Physics</span><br>AP Physics 1, AP Physics C: Mechanics</li>
                         </ul>
                     </div> 
-                </div>
+               
             </div>
+        </div>
+        <div class="portrait">
+            <img src="img/Portrait.png"  >
         </div>
     </div>
 
@@ -112,7 +129,82 @@
 
 <!--------------experience-------------->
 <div id="experience">
-    <h1 class="sub-title">Experience</h1>
+    <h1 class="sub-title" padding-top="20px" padding-bottom="40px">Experience</h1>
+
+    <div class="timeline">
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">April 2024</div>
+          <img src="img/kwkGroup.jpg">
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Kode With Klossy</h2>
+          <p class="timeline__role">Scholar</p>
+          <p class="timeline__paragraph">
+            <li>Participated in an immersive technical program focusing on AI, ML, image classifiers, UI/UX design, and database diversity.</li>
+            <li>Leveraged Teachable Machine to develop a machine learning powered application that can classify over 10 types of flowers from live camera feeds.</li>
+            <li>Returning this summer to undertake an extended machine learning and AI program.</li>
+          </p>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Tutor</h2>
+          <p class="timeline__role">
+            Freelance
+          </p>
+          <p class="timeline__paragraph">
+           <li>Actively tutoring students in Java Programming and AP Statistics.</li>
+           <li>Guided students through practice problems and exam preparation.</li>
+           <li>Developed personalized lesson plans to address specific learning objectives and challenges.</li>
+        
+          </p>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component">
+          <div class="timeline__date">March 2024-Present</div>
+        </div>
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">November 2023-February 2024</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">BAE Systems</h2>
+          <p class="timeline__role">
+            Technology Intern
+          </p>
+          <p class="timeline__paragraph" font-family="Playfair Display">
+            <li>Simulated intricate electronic circuits using TinkerCad to create an efficient prototype.</li>
+            <li>Constructed breadboard circuits, utilizing prototupes as a foundation for seamless integration and functionality.</li>
+            <li>Optimized firmware for electronic systems with C++ on Arduino platforms, ensuring optimal functionality and heightened performance in embedded designs.</li>
+          </p>
+        </div>
+        <div class="timeline__component timeline__component--bottom timeline__component--bg">
+          <h2 class="timeline__title">One Off Coder</h2>
+          <p class="timeline__role">
+            Lead STEM Instructor
+          </p>
+          <p class="timeline__paragraph">
+            <li>Conducted individualized weekly tutoring sessions in Python and math by implementing challenging projects for students.</li>
+            <li>Mentored seven new interns, providing guidance and knowledge transfer to cultivate a collaborative and skilled team, contributing to the program's overall success.</li>
+            <li>Presented daily STEM activities for students to create an interactive and dynamic learning environment.</li>
+          </p>
+          <p class="timeline__paragraph">
+            
+          </p>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+          <div class="timeline__point timeline__point--bottom"></div>
+        </div>
+        <div class="timeline__component timeline__component--bottom">
+          <div class="timeline__date">February 2022-November 2023</div>
+        </div>
+      </div>
     
 </div>
 
@@ -128,3 +220,4 @@
 </div>
 </body>
 </html>
+

@@ -16,8 +16,8 @@
 
 body {
     background: url(img/gradientBg.svg);
-    color: #fbf2ea;
-    cursor: url('img/whiteCursor.png');         
+    color: #fbf2ea;     
+    position: relative;   
 }
 
 .firstRow{
@@ -27,7 +27,6 @@ body {
 
 .intro-col-2 {
     text-align: center;
-    
     font-size: 25px;
     font-family: "Playfair Display";
 }
@@ -46,7 +45,7 @@ body {
 
 .container {
     padding: 10px 10%;
-    
+    position: relative;
 }
 
 nav{
@@ -95,24 +94,21 @@ nav ul li a{
     margin-top: 15%
 }
 /** --------------about me-------------- **/
+
+.about2 {
+    display: flex;
+}
 #about {
-    padding: 80px 0;
+    padding: 0px;
     color: #FDFDF2;
     font-family: "Playfair Display";
-}
-
-.row{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.about-col-1 {
-    flex-basis: 35%;
 }
-
-.about-col-2 {
-    flex-basis: 100%;
+.portrait img {
+    width: 400px;
+    padding: 0px 10% 0px 0px;
 }
 
 .sub-title{
@@ -121,20 +117,24 @@ nav ul li a{
     color: #FDFDF2;
     margin: 10px 10%;
     font-family: "Playfair Display";
+    padding-top: 60px;
 }
-#bio{
+#bio {
     color: #FDFDF2;
     font-size: 30px;
     padding: 10px 0;
+    width: 120%;
+    font-family: "Playfair Display";
 }
 
 #vtLink {
-    color:#FDFDF2;
+    color:#FDFD96;
+    text-decoration: none;
 }
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 10px;
     color: #FDFDF2;
 }
 
@@ -163,7 +163,7 @@ nav ul li a{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .tab-contents ul li span{
@@ -176,14 +176,98 @@ nav ul li a{
 }
 
 .tab-contents.active-tab{
-    display: block;
+    display: flex;
+    font-size: 20px;
+
 }
+
+
+
 
 /** --------------experience-------------- **/
 
+.timeline {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Playfair Display";
+    color: #ffffff;
+  }
+  
+  .timeline__component {
+    margin: 0 20px 20px 20px;
+  }
+  
+  .timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__component--bottom {
+    margin-bottom: 0;
+  }
+  
+  .timeline__middle {
+    position: relative;
+    background: #ffffff;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+    font-family: "Playfair Display";
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Playfair Display";
+  }
+  
+  .timeline__paragraph {
+    font-size: 4em;
+    font-family: "Playfair Display";
+  }
+
+  .timeline__role {
+    font-family: "Playfair Display Italic";
+    font-size: 1.3em;
+  }
+
+  .timeline__date {
+    font-family: "Playfair Display";
+    font-size: 1.5em;
+  }
+
+  .timeline__component img {
+    width: 500px;
+    margin-left: 60px;
+  }
+  
 /** --------------projects-------------- **/
 
 /** --------------contact me-------------- **/
-
 
 
