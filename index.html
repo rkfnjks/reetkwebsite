@@ -7,30 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reet Kaler</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="custom-cursor"></div>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="img/starLogo.png" class="logo" width="10" height="10">
-                <ul >
+                <ul class="navBar">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#About Me">About Me</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
             <div class="firstRow">
-             
                 <div class="intro-col-2">
                     <h1>Hi, I'm <span>Reet Kaler</span>.</h1>
                     <p>Passionate computer science student interested in software development and machine learning.</p>
@@ -39,17 +32,13 @@
             <div class="arrows">
                 <img src="img/beigeArrow.gif" class="arrow1" margin: center>
             </div>
-        
     </div>
 <!--------------about me-------------->
     </div>
-    
+    <div id="About Me">
     <h1 class="sub-title">About Me</h1>
     <div id="about">
-        
         <div class="container">
-            
-                
                 <div class="about-col-2">
                     <p id="bio">My name is Reet Kaler and I'm from the D.C. Metropolitan area.
                         I am pursuing a Bachelor of Science in Computer Science from
@@ -98,6 +87,7 @@
             <img src="img/Portrait.png"  >
         </div>
     </div>
+</div>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -128,9 +118,8 @@
 </script>
 
 <!--------------experience-------------->
-<div id="experience">
+<div id="Experience">
     <h1 class="sub-title" padding-top="20px" padding-bottom="40px">Experience</h1>
-
     <div class="timeline">
         <div class="timeline__component">
           <div class="timeline__date timeline__date--right">April 2024</div>
@@ -144,7 +133,7 @@
           <p class="timeline__role">Scholar</p>
           <p class="timeline__paragraph">
             <li>Participated in an immersive technical program focusing on AI, ML, image classifiers, UI/UX design, and database diversity.</li>
-            <li>Leveraged Teachable Machine to develop a machine learning powered application that can classify over 10 types of flowers from live camera feeds.</li>
+            <li>Leveraged Teachable Machine to develop a machine learning powered application that can classify seven types of flowers from live camera feeds.</li>
             <li>Returning this summer to undertake an extended machine learning and AI program.</li>
           </p>
         </div>
@@ -157,7 +146,6 @@
            <li>Actively tutoring students in Java Programming and AP Statistics.</li>
            <li>Guided students through practice problems and exam preparation.</li>
            <li>Developed personalized lesson plans to address specific learning objectives and challenges.</li>
-        
           </p>
         </div>
         <div class="timeline__middle">
@@ -206,36 +194,38 @@
           <div class="timeline__date">February 2022-November 2023</div>
         </div>
       </div>
-    
 </div>
 
 <!--------------projects-------------->
-<div id="projects">
+<div id="Projects">
     <h1 class="sub-title">Projects</h1>
     <div class="container">
         <div class="project__component__bg">
-            <div class="project__component__title">FlowerFinder</div>
-        </div>
-        <div class="project__contents">
-            <div class="project__description">
-                <li>An image classification machine learning model that leverages Google's Teachable Machine to accurately identify seven distinct types of flowers solely from live camera feeds.</li>
-                <li>Implemented data analytics techniques to enhance the model's accuracy and performance.</li>
+            <div class="left">
+                <div class="project__component__title">FlowerFinder</div>
+                <div class="project__contents">
+                    <div class="project__description">
+                        <li>An image classification machine learning model that leverages Google's Teachable Machine to accurately identify seven distinct types of flowers solely from live camera feeds.</li>
+                        <li>Implemented data analytics techniques to enhance the model's accuracy and performance.</li>
+                        <li>Seamlessly integrated image classifier into a website interface.</li>
+                    </div>
+                   
+                </div>
             </div>
+            
             <div class="col">
                 <img src="img/flowerFinderPreview.png">
             </div>
-
-            
         </div>
-        
     </div>
-    
-    
 </div>
 <!--------------contact me-------------->
-<div id="Contact Me">
+<div id="Contact">
     <h1 class="sub-title">Contact Me</h1>
-    
+    <div class="container">
+        <a class="email__btn" href="mailto:reetkcoding@gmail.com?subject=Website%20Inquiry">Email</a>
+
+    </div>
 </div>
 </body>
 </html>

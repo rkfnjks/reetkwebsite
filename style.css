@@ -290,18 +290,52 @@ nav ul li a{
     font-size: 2em;
 }
 
-.project__contents {
+.project__component__bg {
     display: flex;
 }
 
 .col img {
     width: 400px;
-    padding-right: 50px;
+    padding-right: 10px;
 }
 
 .project__description {
-    padding-left: 30px;
+    padding-left: 0px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
 }
+
+.left {
+    padding-top: 40px;
+}
+
 /** --------------contact me-------------- **/
 
+.email__btn {
+    margin-top: 1rem;
+    padding: .875rem 1.25rem;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #d2b46e;
+    color: #d2b46e;
+    font-family: "Playfair Display";
+    text-decoration: none;
+ }
 
+ .navBar {
+    position: fixed;
+    margin-top: 3%;
+    margin-left: 22%;
+    font-family: "Playfair Display";
+    border-radius: 5px;
+ }
+
+ .narBar a:hover{
+    background-color: hsl(272, 74%, 72%);
+ }
+
+ .contact {
+    padding-bottom: 50px;
+ }
