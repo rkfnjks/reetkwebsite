@@ -294,7 +294,14 @@ nav ul li a{
     display: flex;
 }
 
-.
+.col img {
+    width: 400px;
+    padding-right: 50px;
+}
+
+.project__description {
+    padding-left: 30px;
+}
 /** --------------contact me-------------- **/
 
 
